@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const IMG_BASE = "https://image.tmdb.org/t/p/w500";
 
-const MovieCard = (movie) => {
+const MovieCard = ({ movie }) => {
   const { id, title, poster_path, release_date } = movie;
 
   return (

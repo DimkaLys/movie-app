@@ -12,3 +12,13 @@ body {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  div[style*="flex"] {
+    flex-direction: column;
+  }
+
+  img[style*="300px"] {
+    width: 100% !important;
+  }
+}

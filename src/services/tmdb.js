@@ -22,3 +22,6 @@ export const getMovieId = (id) => {
 export const getGenres = () => {
   return tmdb.get("genre/movie/list");
 };
+
+export const getMoviesByGenre = (genreId) =>
+  tmdb.get("/discover/movie", { params: { with_genres: genreId } });
